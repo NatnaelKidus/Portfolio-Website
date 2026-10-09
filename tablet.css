@@ -1,0 +1,9 @@
+.project-card {
+    width: 48%;
+    margin: 0 1% 1.5rem 0;
+}
+
+.bio-section, .video-section {
+    display: block;
+    width: 100%;
+}

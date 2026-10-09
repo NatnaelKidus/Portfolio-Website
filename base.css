@@ -1,0 +1,289 @@
+:root {
+    --primary: #23645C;
+    --secondary: #879681;
+    --accent: #BC984E;
+    --light-bg: #ECE6D9;
+    --dark-text: #33312E;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-text);
+    background: var(--light-bg);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(115deg, #164B43, #46735C);
+    color: white;
+    border-bottom: 4px solid var(--accent);
+}
+
+.header-top {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.clear {
+    clear: both;
+}
+
+.site-name {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+nav a:hover, nav a:focus, nav a.active {
+    border-bottom: 2px solid var(--accent);
+}
+
+.header-title {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 4.8rem 0 5rem;
+}
+
+.header-title h1 {
+    font-size: 3.3rem;
+    line-height: 1.2;
+}
+
+.title-line {
+    width: 65px;
+    height: 4px;
+    background: var(--accent);
+    margin: 0.9rem 0;
+}
+
+.header-description {
+    color: #F6F6F3;
+    max-width: 720px;
+    font-size: 1.2rem;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    min-height: 260px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #164B43, #46735C);
+    color: white;
+    padding: 3.5rem 2rem;
+    border-radius: 9px;
+}
+
+.hero-banner h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.hero-banner p {
+    margin: 0.6rem 0;
+}
+
+.hero-link {
+    display: inline-block;
+    color: var(--primary);
+    background: white;
+    text-decoration: none;
+    padding: 0.65rem 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 0.6rem;
+}
+
+.hero-link:hover, .hero-link:focus {
+    background: #F4E9D3;
+}
+
+.projects-intro {
+    margin-bottom: 1.5rem;
+}
+
+.project-card {
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    border: 1px solid #C3C6BF;
+    border-left: 4px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1.7rem;
+    box-shadow: 0 5px 14px rgba(35,100,92,0.08);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+}
+
+.project-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.project-card p {
+    color: var(--dark-text);
+}
+
+.bio-section, .video-section, .form-container {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid #C3C6BF;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    margin: 1rem 0;
+}
+
+.video-section video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.form-container {
+    display: block;
+    max-width: 680px;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #879681;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--primary);
+}
+
+.gradient-btn {
+    background: linear-gradient(to right, #164B43, #46735C);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.gradient-btn:hover {
+    background: #30594E;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 1.7rem 1rem;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.home-intro {
+    margin: 2rem 0 1.2rem;
+}
+
+.home-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 0 2% 1.5rem 0;
+    padding: 1.6rem;
+    background: white;
+    border: 1px solid #C3C6BF;
+    border-left: 4px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.home-card p {
+    margin-bottom: 0.8rem;
+}
+
+.home-card a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
